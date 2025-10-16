@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Libertinus+Serif+Display&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Libertinus+Serif+Display&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap");
+
+:root {
+  --clr-bg: #ffffff;
+  --clr-card-bg: #000000;
+  --clr-info-bg: #e4dbff;
+  --clr-primary: #9c81ed;
+  --clr-accent: #b59aff;
+  --clr-text: #ffffff;
+  --font-main: "Comfortaa", sans-serif;
+  --font-secondary: "Varela Round", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-secondary);
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+}
+
+.app-content-card {
+  background-color: var(--clr-card-bg);
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  border-radius: 0 0 30px 30px;
+  padding: 93px 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-title {
+  font-family: var(--font-main);
+  color: var(--clr-text);
+  font-size: clamp(32pt, 8vw, 55pt);
+  text-align: center;
+}
+
+.info-card {
+  background-color: #e4dbff;
+  border-radius: 25px;
+  padding: 12px;
+  width: 85vw;
+  height: 17vh;
+  max-height: 150px;
+  max-width: 50rem;
+  min-width: 330px;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ico-card {
+  background-color: #6e25b8;
+  width: 126px;
+  min-width: 126px;
+  height: 100%;
+  border-radius: 20px;
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    height: 100%;
+    background-color: #000000;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
+  .info-card {
+    max-height: 120px;
+  }
+
+  .ico-card {
+    min-width: 96px;
+  }
+}
