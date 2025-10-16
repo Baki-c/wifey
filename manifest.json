@@ -1,0 +1,11 @@
+{
+  "name": "Wifey♡",
+  "short_name": "wifey",
+  "lang": "en",
+  "start_url": "/wifey/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#ffffff"
+}
